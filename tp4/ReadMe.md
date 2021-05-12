@@ -269,14 +269,20 @@ Grant succeeded.
   
 
 ```sql
+SQL> grant dev_team to dev1,dev2;
+
+Grant succeeded.
+```
+```sql
+SQL> grant test_team to tester1,tester2;
+
+Grant succeeded
 
 ```
 ```sql
+SQL> grant devops_team to devsecops1,devsecops2;
 
-
-```
-```sql
-
+Grant succeeded.
 
 ```
    - **Limiter l'accès pour les testeurs de sorte qu'ils n'accèdent qu'à la table des employés "EMP":** 
