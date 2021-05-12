@@ -273,7 +273,6 @@ Grant succeeded.
 SQL> grant  DBA TO devops_team;
 
 Grant succeeded.
-```
 
    - **Limiter l'accès pour les testeurs de sorte qu'ils n'accèdent qu'à la table des employés "EMP":** 
   
