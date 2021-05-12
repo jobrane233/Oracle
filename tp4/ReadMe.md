@@ -176,6 +176,17 @@ create user tester1 identified by tester1;
 create user tester2 identified by tester2;
 create user devsecops1 identified by devsecops1;
 create user devsecops2 identified by devsecops1;
+result in sqlPLUS :
+SQL> select* from all_users order by created desc;
+
+USERNAME                          USER_ID CREATED
+------------------------------ ---------- --------
+DEV2                                   63 12/05/21
+DEVSECOPS2                             62 12/05/21
+TESTER2                                60 12/05/21
+TESTER1                                59 12/05/21
+DEV1                                   58 12/05/21
+
 ```
   --->  **Une fois qu'un utilisateur est créé, le DBA peut octroyer des privilèges de système spécifiques à cet utilisateur.**
  
@@ -189,7 +200,9 @@ create user devsecops2 identified by devsecops1;
      * Création,lecture, modification de structure et suppression de tables.
 
 ```sql
----
+SQL> grant CREATE PROCEDURE , CREATE SEQUENCE , CREATE ANY TABLE ,SELECT ANY TABLE, DROP ANY TABLE,ALTER ANY TABLE, CREATE VIEW , CREATE SESSION to dev1;
+
+Grant succeeded.
 ```
 
 ¤   **Une fois qu'un utilisateur est créé, le DBA peut octroyer des privilèges de système spécifiques à cet utilisateur.**
