@@ -269,11 +269,13 @@ Grant succeeded.
 SQL> grant  SELECT ANY TABLE,  CREATE SESSION, CONNECT TO test_team;
 
 Grant succeeded.
+```
 ```sql
+
 SQL> grant  DBA TO devops_team;
 
 Grant succeeded.
-
+```
    - **Limiter l'accès pour les testeurs de sorte qu'ils n'accèdent qu'à la table des employés "EMP":** 
   
 
