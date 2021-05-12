@@ -316,7 +316,11 @@ Grant succeeded.
  
  
 ```sql
----
+SQL> connect devsecops1
+Enter password:
+Connected.
+
+SQL> revoke all on EMP from public
 ```
 
 
