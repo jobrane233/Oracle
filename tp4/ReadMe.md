@@ -340,7 +340,19 @@ SQL> SQL> REVOKE
 
 
 ```sql 
----
+SQL> CREATE PROFILE PDEV
+  2  LIMIT
+  3  SESSIONS_PER_USER UNLIMITED
+  4  CPU_PER_SESSION 10000
+  5  CPU_PER_CALL 1000
+  6  CONNECT_TIME 45
+  7  LOGICAL_READS_PER_SESSION DEFAULT
+  8  LOGICAL_READS_PER_CALL 1000
+  9  PRIVATE_SGA 25K
+ 10  PASSWORD_LIFE_TIME 60
+ 11  PASSWORD_REUSE_TIME 10;
+
+Profile created.
 ```
 
 
@@ -357,7 +369,19 @@ SQL> SQL> REVOKE
   * ***Durée de vie en jours du mot de passe:*** ***60***
   * ***Nombre maximal de réutilisations de mot de passe:*** ***10***
 ```sql 
----
+SQL> CREATE PROFILE PDEV
+  2  LIMIT
+  3  SESSIONS_PER_USER UNLIMITED
+  4  CPU_PER_SESSION 10000
+  5  CPU_PER_CALL 1000
+  6  CONNECT_TIME 45
+  7  LOGICAL_READS_PER_SESSION DEFAULT
+  8  LOGICAL_READS_PER_CALL 1000
+  9  PRIVATE_SGA 25K
+ 10  PASSWORD_LIFE_TIME 60
+ 11  PASSWORD_REUSE_TIME 10;
+
+Profile created.
 ```
 
 **Créer un profile de ressources dédié à l'équipe devsecops avec les limitations suivantes:**
@@ -372,11 +396,23 @@ SQL> SQL> REVOKE
   * ***Nombre maximal de réutilisations de mot de passe:*** ***10***
 
 ```sql 
----
+SQL> CREATE PROFILE PDEV
+  2  LIMIT
+  3  SESSIONS_PER_USER UNLIMITED
+  4  CPU_PER_SESSION 10000
+  5  CPU_PER_CALL 1000
+  6  CONNECT_TIME 45
+  7  LOGICAL_READS_PER_SESSION DEFAULT
+  8  LOGICAL_READS_PER_CALL 1000
+  9  PRIVATE_SGA 25K
+ 10  PASSWORD_LIFE_TIME 60
+ 11  PASSWORD_REUSE_TIME 10;
 ```
 
   - **Attribuer à l'utilisateur "dev1", le profile qui lui correspond:** 
 ```sql
----
+SQL> ALTER USER dev1 PROFILE PDEV;
+
+User altered.
 ```
 
