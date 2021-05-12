@@ -260,13 +260,19 @@ Role created.
   
 
 ```sql
----
+grant CREATE PROCEDURE , CREATE SEQUENCE , CREATE ANY TABLE ,SELECT ANY TABLE, DROP ANY TABLE,ALTER ANY TABLE, CREATE VIEW , CREATE SESSION TO dev_team;
+
+Grant succeeded.
 ```
 ```sql
----
-```
+
+SQL> grant  SELECT ANY TABLE,  CREATE SESSION, CONNECT TO test_team;
+
+Grant succeeded.
 ```sql
----
+SQL> grant  DBA TO devops_team;
+
+Grant succeeded.
 ```
 
    - **Limiter l'accès pour les testeurs de sorte qu'ils n'accèdent qu'à la table des employés "EMP":** 
