@@ -320,7 +320,9 @@ SQL> connect devsecops1
 Enter password:
 Connected.
 
-SQL> revoke all on EMP from public
+SQL> SQL> REVOKE
+  2  DBA
+  3  FROM devops_team ;
 ```
 
 
