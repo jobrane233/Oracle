@@ -236,16 +236,22 @@ Revoke succeeded.
      C) Le rôle de l'équipe DevSecOps permet d'avoir tous les privilèges avec mode administrateur de la base:  
 
 ```sql
----
+CREATE ROLE dev_team;
+
+Role created.
 ```
 ```sql
----
+
 ```
 ```sql
----
+SQL> CREATE ROLE test_team;
+
+Role created.
 ```
 ```sql
----
+SQL> CREATE ROLE devops_team;
+
+Role created.
 ```
 
 
