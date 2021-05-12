@@ -306,7 +306,9 @@ Grant succeeded.
   
 
  ```sql
----
+SQL> grant select on  EMP  to public;
+
+Grant succeeded.
 ```
 
 **Retirer les privilèges attribuées aux admins, ainsi que les utilisateurs qui ont reçu leurs privilèges sur la table EMP par un membre de l'équipe devsecops:**
