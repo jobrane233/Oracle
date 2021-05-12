@@ -211,7 +211,9 @@ Grant succeeded.
    - **Révoquer tous les privilèges associès à l'utilisateur dev1 :** 
 
 ```sql
----
+SQL> REVOKE  CREATE PROCEDURE , CREATE SEQUENCE , CREATE ANY TABLE ,SELECT ANY TABLE, DROP ANY TABLE,ALTER ANY TABLE, CREATE VIEW , CREATE SESSION from dev1;
+
+Revoke succeeded.
 ```
 
  
