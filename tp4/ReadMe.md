@@ -289,11 +289,15 @@ Grant succeeded.
   
 
 ```sql
----
+revoke select any table from test_team;
+
+Revoke succeeded.
 ```
 
  ```sql
----
+SQL> grant  SELECT ON EMP TO test_team;
+
+Grant succeeded.
 ```
  
  
