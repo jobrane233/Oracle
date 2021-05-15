@@ -369,7 +369,7 @@ Profile created.
   * ***Durée de vie en jours du mot de passe:*** ***60***
   * ***Nombre maximal de réutilisations de mot de passe:*** ***10***
 ```sql 
-SQL> CREATE PROFILE PDEV
+SQL> CREATE PROFILE PDET
   2  LIMIT
   3  SESSIONS_PER_USER 5
   4  CPU_PER_SESSION UNLIMITED
